@@ -88,7 +88,7 @@ int echo_command(char* arguments[]) {
     return 0;
 }
 
-int handleCommand(char* name, char* arguments[]) {
+int handle_command(char* name, char* arguments[]) {
     char* args[MAX_ARGUMENTS];
     int i = 0;
 
@@ -116,7 +116,7 @@ int handleCommand(char* name, char* arguments[]) {
         result = 1;
     }
 
-    freeArguments(args);
+    free_arguments(args);
     return result;
 }
 

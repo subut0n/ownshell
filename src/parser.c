@@ -4,7 +4,7 @@
 #include <string.h>
 
 // Function to parse the command into arguments
-void parseCommand(char* command, char* arguments[]) {
+void parse_command(char* command, char* arguments[]) {
     char* token = strtok(command, " "); // Tokenize the command by spaces
     int i = 0;
     while (token != NULL && i < MAX_ARGUMENTS - 1) {

@@ -2,9 +2,9 @@
 #define UTILS_H
 
 // Function to free the memory allocated for the arguments
-void freeArguments(char* arguments[]);
+void free_arguments(char* arguments[]);
 
 // Function to count the number of arguments
-int countArguments(char* arguments[]);
+int count_arguments(char* arguments[]);
 
 #endif /* UTILS_H */

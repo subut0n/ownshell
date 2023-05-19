@@ -2,6 +2,6 @@
 #define SIGNALS_H
 
 // Signal handler for SIGINT (Ctrl+C)
-void handleSigInt(int signum);
+void handle_sig_int(int signum);
 
 #endif /* SIGNALS_H */

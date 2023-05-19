@@ -18,6 +18,6 @@ int export_command(char* arguments[]);
 int echo_command(char* arguments[]);
 
 // Function to handle commands
-int handleCommand(char* name, char* arguments[]);
+int handle_command(char* name, char* arguments[]);
 
 #endif /* COMMANDS_H */

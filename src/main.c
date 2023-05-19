@@ -14,7 +14,7 @@ int main() {
     char* arguments[MAX_ARGUMENTS];
 
     // Set up signal handler for SIGINT (Ctrl+C)
-    signal(SIGINT, handleSigInt);
+    signal(SIGINT, handle_sig_int);
 
     while (1) {
         command = readline("ownshell $ ");
@@ -22,10 +22,10 @@ int main() {
             break;
         }
 
-        parseCommand(command, arguments);
+        parse_command(command, arguments);
 
         if (arguments[0] != NULL) {
-            handleCommand(arguments[0], arguments);
+            handle_command(arguments[0], arguments);
         }
 
         free(command);

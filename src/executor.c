@@ -5,7 +5,7 @@
 #include <sys/wait.h>
 
 // Function to execute the command
-int executeCommand(char* arguments[]) {
+int execute_command(char* arguments[]) {
     pid_t pid = fork();
     if (pid < 0) {
         fprintf(stderr, "Fork failed\n");
